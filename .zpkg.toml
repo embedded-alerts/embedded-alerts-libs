@@ -1,0 +1,19 @@
+[package]
+org = "embedded-alerts"
+name = "embedded-alerts-libs"
+version = "0.1.0"
+description = "Shared libraries for Embedded Alerts"
+license = "MIT"
+language = "rust"
+
+[package.repository]
+vcs = "git"
+url = "https://github.com/embedded-alerts/embedded-alerts-libs"
+
+[publish]
+include_readme = true
+tag_format = "v{version}"
+exclude = [".env", ".env.*", "node_modules/**", "target/**", "dist/**", "*.log"]
+
+[dependencies]
+"embedded-alerts/eal-interfaces" = "^0.1.0"
